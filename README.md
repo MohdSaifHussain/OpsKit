@@ -17,6 +17,9 @@ analytical questions do not. OpsKit automates the questions.
 ## Run it
 
 pip install duckdb openpyxl pandas
+
 python opskit4.py demo
+
 python opskit4.py run weekly-review demo_data/incidents.csv
+
 python opskit4.py run weekly-review demo_data/incidents.csv --metric sum:loss_amount
