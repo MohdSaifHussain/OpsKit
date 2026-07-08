@@ -1,0 +1,7 @@
+[thresholds]
+drill_threshold = 0.15
+
+[playbooks.claims-review]
+title = "Insurance Claims Weekly Review"
+description = "Domain pack composed in TOML, zero code changes"
+steps = ["shape", "missing", "duplicates", "time_coverage", "volume_change"]
