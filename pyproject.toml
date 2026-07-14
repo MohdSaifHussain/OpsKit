@@ -1,8 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "opskit4"
-version = "4.0.0"
+version = "4.1.0"
+description = "Operational analyst playbooks — conditional driver analysis, SHAPE → TRUST → CHANGE → DRIVER → CONCENTRATION → ACTION"
+readme = "README.md"
+license = { file = "LICENSE" }
 requires-python = ">=3.12"
+authors = [{ name = "Mohd Saif Hussain" }]
 dependencies = ["duckdb>=1.5", "openpyxl>=3.1", "pandas>=2.0"]
+
+[project.urls]
+Homepage = "https://github.com/MohdSaifHussain/OpsKit"
+Repository = "https://github.com/MohdSaifHussain/OpsKit"
+
+[project.scripts]
+opskit = "opskit4:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=9.0", "mypy>=2.0", "ruff>=0.15"]
+
+[tool.setuptools]
+py-modules = ["opskit4"]
 
 [tool.ruff]
 line-length = 100
